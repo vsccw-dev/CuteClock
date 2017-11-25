@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FBCC72E1FC9DDDD008267AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBCC72D1FC9DDDD008267AB /* AppDelegate.swift */; };
+		3FBCC7301FC9DDDD008267AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBCC72F1FC9DDDD008267AB /* ViewController.swift */; };
+		3FBCC7331FC9DDDD008267AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBCC7311FC9DDDD008267AB /* Main.storyboard */; };
+		3FBCC7351FC9DDDD008267AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FBCC7341FC9DDDD008267AB /* Assets.xcassets */; };
+		3FBCC7381FC9DDDD008267AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBCC7361FC9DDDD008267AB /* LaunchScreen.storyboard */; };
+		3FBCC7431FC9DDDD008267AB /* CuteClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBCC7421FC9DDDD008267AB /* CuteClockTests.swift */; };
+		3FBCC74E1FC9DDDD008267AB /* CuteClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBCC74D1FC9DDDD008267AB /* CuteClockUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FBCC73F1FC9DDDD008267AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FBCC7221FC9DDDD008267AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FBCC7291FC9DDDD008267AB;
+			remoteInfo = CuteClock;
+		};
+		3FBCC74A1FC9DDDD008267AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FBCC7221FC9DDDD008267AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FBCC7291FC9DDDD008267AB;
+			remoteInfo = CuteClock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3FBCC72A1FC9DDDD008267AB /* CuteClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CuteClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FBCC72D1FC9DDDD008267AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3FBCC72F1FC9DDDD008267AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3FBCC7321FC9DDDD008267AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FBCC7341FC9DDDD008267AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FBCC7371FC9DDDD008267AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FBCC7391FC9DDDD008267AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FBCC73E1FC9DDDD008267AB /* CuteClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuteClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FBCC7421FC9DDDD008267AB /* CuteClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuteClockTests.swift; sourceTree = "<group>"; };
+		3FBCC7441FC9DDDD008267AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FBCC7491FC9DDDD008267AB /* CuteClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuteClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FBCC74D1FC9DDDD008267AB /* CuteClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuteClockUITests.swift; sourceTree = "<group>"; };
+		3FBCC74F1FC9DDDD008267AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FBCC7271FC9DDDD008267AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FBCC73B1FC9DDDD008267AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FBCC7461FC9DDDD008267AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FBCC7211FC9DDDD008267AB = {
+			isa = PBXGroup;
+			children = (
+				3FBCC72C1FC9DDDD008267AB /* CuteClock */,
+				3FBCC7411FC9DDDD008267AB /* CuteClockTests */,
+				3FBCC74C1FC9DDDD008267AB /* CuteClockUITests */,
+				3FBCC72B1FC9DDDD008267AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FBCC72B1FC9DDDD008267AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FBCC72A1FC9DDDD008267AB /* CuteClock.app */,
+				3FBCC73E1FC9DDDD008267AB /* CuteClockTests.xctest */,
+				3FBCC7491FC9DDDD008267AB /* CuteClockUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FBCC72C1FC9DDDD008267AB /* CuteClock */ = {
+			isa = PBXGroup;
+			children = (
+				3FBCC72D1FC9DDDD008267AB /* AppDelegate.swift */,
+				3FBCC72F1FC9DDDD008267AB /* ViewController.swift */,
+				3FBCC7311FC9DDDD008267AB /* Main.storyboard */,
+				3FBCC7341FC9DDDD008267AB /* Assets.xcassets */,
+				3FBCC7361FC9DDDD008267AB /* LaunchScreen.storyboard */,
+				3FBCC7391FC9DDDD008267AB /* Info.plist */,
+			);
+			path = CuteClock;
+			sourceTree = "<group>";
+		};
+		3FBCC7411FC9DDDD008267AB /* CuteClockTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FBCC7421FC9DDDD008267AB /* CuteClockTests.swift */,
+				3FBCC7441FC9DDDD008267AB /* Info.plist */,
+			);
+			path = CuteClockTests;
+			sourceTree = "<group>";
+		};
+		3FBCC74C1FC9DDDD008267AB /* CuteClockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3FBCC74D1FC9DDDD008267AB /* CuteClockUITests.swift */,
+				3FBCC74F1FC9DDDD008267AB /* Info.plist */,
+			);
+			path = CuteClockUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FBCC7291FC9DDDD008267AB /* CuteClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FBCC7521FC9DDDD008267AB /* Build configuration list for PBXNativeTarget "CuteClock" */;
+			buildPhases = (
+				3FBCC7261FC9DDDD008267AB /* Sources */,
+				3FBCC7271FC9DDDD008267AB /* Frameworks */,
+				3FBCC7281FC9DDDD008267AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CuteClock;
+			productName = CuteClock;
+			productReference = 3FBCC72A1FC9DDDD008267AB /* CuteClock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FBCC73D1FC9DDDD008267AB /* CuteClockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FBCC7551FC9DDDD008267AB /* Build configuration list for PBXNativeTarget "CuteClockTests" */;
+			buildPhases = (
+				3FBCC73A1FC9DDDD008267AB /* Sources */,
+				3FBCC73B1FC9DDDD008267AB /* Frameworks */,
+				3FBCC73C1FC9DDDD008267AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FBCC7401FC9DDDD008267AB /* PBXTargetDependency */,
+			);
+			name = CuteClockTests;
+			productName = CuteClockTests;
+			productReference = 3FBCC73E1FC9DDDD008267AB /* CuteClockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3FBCC7481FC9DDDD008267AB /* CuteClockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FBCC7581FC9DDDD008267AB /* Build configuration list for PBXNativeTarget "CuteClockUITests" */;
+			buildPhases = (
+				3FBCC7451FC9DDDD008267AB /* Sources */,
+				3FBCC7461FC9DDDD008267AB /* Frameworks */,
+				3FBCC7471FC9DDDD008267AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FBCC74B1FC9DDDD008267AB /* PBXTargetDependency */,
+			);
+			name = CuteClockUITests;
+			productName = CuteClockUITests;
+			productReference = 3FBCC7491FC9DDDD008267AB /* CuteClockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FBCC7221FC9DDDD008267AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = vsccw;
+				TargetAttributes = {
+					3FBCC7291FC9DDDD008267AB = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					3FBCC73D1FC9DDDD008267AB = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3FBCC7291FC9DDDD008267AB;
+					};
+					3FBCC7481FC9DDDD008267AB = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3FBCC7291FC9DDDD008267AB;
+					};
+				};
+			};
+			buildConfigurationList = 3FBCC7251FC9DDDD008267AB /* Build configuration list for PBXProject "CuteClock" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FBCC7211FC9DDDD008267AB;
+			productRefGroup = 3FBCC72B1FC9DDDD008267AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FBCC7291FC9DDDD008267AB /* CuteClock */,
+				3FBCC73D1FC9DDDD008267AB /* CuteClockTests */,
+				3FBCC7481FC9DDDD008267AB /* CuteClockUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FBCC7281FC9DDDD008267AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FBCC7381FC9DDDD008267AB /* LaunchScreen.storyboard in Resources */,
+				3FBCC7351FC9DDDD008267AB /* Assets.xcassets in Resources */,
+				3FBCC7331FC9DDDD008267AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FBCC73C1FC9DDDD008267AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FBCC7471FC9DDDD008267AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FBCC7261FC9DDDD008267AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FBCC7301FC9DDDD008267AB /* ViewController.swift in Sources */,
+				3FBCC72E1FC9DDDD008267AB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FBCC73A1FC9DDDD008267AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FBCC7431FC9DDDD008267AB /* CuteClockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FBCC7451FC9DDDD008267AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FBCC74E1FC9DDDD008267AB /* CuteClockUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FBCC7401FC9DDDD008267AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FBCC7291FC9DDDD008267AB /* CuteClock */;
+			targetProxy = 3FBCC73F1FC9DDDD008267AB /* PBXContainerItemProxy */;
+		};
+		3FBCC74B1FC9DDDD008267AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FBCC7291FC9DDDD008267AB /* CuteClock */;
+			targetProxy = 3FBCC74A1FC9DDDD008267AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3FBCC7311FC9DDDD008267AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FBCC7321FC9DDDD008267AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3FBCC7361FC9DDDD008267AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FBCC7371FC9DDDD008267AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FBCC7501FC9DDDD008267AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3FBCC7511FC9DDDD008267AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FBCC7531FC9DDDD008267AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7Z9QGDZHJM;
+				INFOPLIST_FILE = CuteClock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vsccw.CuteClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FBCC7541FC9DDDD008267AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7Z9QGDZHJM;
+				INFOPLIST_FILE = CuteClock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vsccw.CuteClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3FBCC7561FC9DDDD008267AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7Z9QGDZHJM;
+				INFOPLIST_FILE = CuteClockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vsccw.CuteClockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CuteClock.app/CuteClock";
+			};
+			name = Debug;
+		};
+		3FBCC7571FC9DDDD008267AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7Z9QGDZHJM;
+				INFOPLIST_FILE = CuteClockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vsccw.CuteClockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CuteClock.app/CuteClock";
+			};
+			name = Release;
+		};
+		3FBCC7591FC9DDDD008267AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7Z9QGDZHJM;
+				INFOPLIST_FILE = CuteClockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vsccw.CuteClockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CuteClock;
+			};
+			name = Debug;
+		};
+		3FBCC75A1FC9DDDD008267AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7Z9QGDZHJM;
+				INFOPLIST_FILE = CuteClockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vsccw.CuteClockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CuteClock;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FBCC7251FC9DDDD008267AB /* Build configuration list for PBXProject "CuteClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FBCC7501FC9DDDD008267AB /* Debug */,
+				3FBCC7511FC9DDDD008267AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FBCC7521FC9DDDD008267AB /* Build configuration list for PBXNativeTarget "CuteClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FBCC7531FC9DDDD008267AB /* Debug */,
+				3FBCC7541FC9DDDD008267AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FBCC7551FC9DDDD008267AB /* Build configuration list for PBXNativeTarget "CuteClockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FBCC7561FC9DDDD008267AB /* Debug */,
+				3FBCC7571FC9DDDD008267AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FBCC7581FC9DDDD008267AB /* Build configuration list for PBXNativeTarget "CuteClockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FBCC7591FC9DDDD008267AB /* Debug */,
+				3FBCC75A1FC9DDDD008267AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FBCC7221FC9DDDD008267AB /* Project object */;
+}
