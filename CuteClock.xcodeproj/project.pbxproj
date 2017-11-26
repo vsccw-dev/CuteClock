@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F9F976C1FC9E96B00F06110 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9F976A1FC9E96B00F06110 /* RxCocoa.framework */; };
+		3F9F976D1FC9E96B00F06110 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9F976B1FC9E96B00F06110 /* RxSwift.framework */; };
 		3FBCC72E1FC9DDDD008267AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBCC72D1FC9DDDD008267AB /* AppDelegate.swift */; };
-		3FBCC7301FC9DDDD008267AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBCC72F1FC9DDDD008267AB /* ViewController.swift */; };
+		3FBCC7301FC9DDDD008267AB /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBCC72F1FC9DDDD008267AB /* MainController.swift */; };
 		3FBCC7331FC9DDDD008267AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBCC7311FC9DDDD008267AB /* Main.storyboard */; };
 		3FBCC7351FC9DDDD008267AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FBCC7341FC9DDDD008267AB /* Assets.xcassets */; };
 		3FBCC7381FC9DDDD008267AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBCC7361FC9DDDD008267AB /* LaunchScreen.storyboard */; };
@@ -34,9 +36,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F9F976A1FC9E96B00F06110 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		3F9F976B1FC9E96B00F06110 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		3F9F97791FCAAB1000F06110 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		3F9F977A1FCAAB1000F06110 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		3FBCC72A1FC9DDDD008267AB /* CuteClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CuteClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBCC72D1FC9DDDD008267AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3FBCC72F1FC9DDDD008267AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3FBCC72F1FC9DDDD008267AB /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		3FBCC7321FC9DDDD008267AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FBCC7341FC9DDDD008267AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FBCC7371FC9DDDD008267AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F9F976C1FC9E96B00F06110 /* RxCocoa.framework in Frameworks */,
+				3F9F976D1FC9E96B00F06110 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +82,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F9F97691FC9E96B00F06110 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F9F976A1FC9E96B00F06110 /* RxCocoa.framework */,
+				3F9F976B1FC9E96B00F06110 /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F9F976F1FCA957700F06110 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3FBCC72F1FC9DDDD008267AB /* MainController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3F9F97701FCA958600F06110 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3F9F97711FCA958B00F06110 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3F9F97721FCA959100F06110 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3F9F97731FCA959D00F06110 /* Support files */ = {
+			isa = PBXGroup;
+			children = (
+				3FBCC72D1FC9DDDD008267AB /* AppDelegate.swift */,
+				3FBCC7311FC9DDDD008267AB /* Main.storyboard */,
+				3FBCC7341FC9DDDD008267AB /* Assets.xcassets */,
+				3FBCC7361FC9DDDD008267AB /* LaunchScreen.storyboard */,
+				3FBCC7391FC9DDDD008267AB /* Info.plist */,
+			);
+			path = "Support files";
+			sourceTree = "<group>";
+		};
 		3FBCC7211FC9DDDD008267AB = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +139,7 @@
 				3FBCC7411FC9DDDD008267AB /* CuteClockTests */,
 				3FBCC74C1FC9DDDD008267AB /* CuteClockUITests */,
 				3FBCC72B1FC9DDDD008267AB /* Products */,
+				3F9F97691FC9E96B00F06110 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +156,11 @@
 		3FBCC72C1FC9DDDD008267AB /* CuteClock */ = {
 			isa = PBXGroup;
 			children = (
-				3FBCC72D1FC9DDDD008267AB /* AppDelegate.swift */,
-				3FBCC72F1FC9DDDD008267AB /* ViewController.swift */,
-				3FBCC7311FC9DDDD008267AB /* Main.storyboard */,
-				3FBCC7341FC9DDDD008267AB /* Assets.xcassets */,
-				3FBCC7361FC9DDDD008267AB /* LaunchScreen.storyboard */,
-				3FBCC7391FC9DDDD008267AB /* Info.plist */,
+				3F9F97721FCA959100F06110 /* Extension */,
+				3F9F97711FCA958B00F06110 /* Model */,
+				3F9F97701FCA958600F06110 /* View */,
+				3F9F976F1FCA957700F06110 /* Controller */,
+				3F9F97731FCA959D00F06110 /* Support files */,
 			);
 			path = CuteClock;
 			sourceTree = "<group>";
@@ -135,6 +193,7 @@
 				3FBCC7261FC9DDDD008267AB /* Sources */,
 				3FBCC7271FC9DDDD008267AB /* Frameworks */,
 				3FBCC7281FC9DDDD008267AB /* Resources */,
+				3F9F976E1FC9E98400F06110 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -254,12 +313,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3F9F976E1FC9E98400F06110 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3FBCC7261FC9DDDD008267AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FBCC7301FC9DDDD008267AB /* ViewController.swift in Sources */,
+				3FBCC7301FC9DDDD008267AB /* MainController.swift in Sources */,
 				3FBCC72E1FC9DDDD008267AB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +378,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3FBCC7321FC9DDDD008267AB /* Base */,
+				3F9F97791FCAAB1000F06110 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -308,6 +387,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3FBCC7371FC9DDDD008267AB /* Base */,
+				3F9F977A1FCAAB1000F06110 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -319,6 +399,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -376,6 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -426,12 +508,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7Z9QGDZHJM;
-				INFOPLIST_FILE = CuteClock/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "CuteClock/Support files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vsccw.CuteClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -441,12 +530,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7Z9QGDZHJM;
-				INFOPLIST_FILE = CuteClock/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "CuteClock/Support files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vsccw.CuteClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
