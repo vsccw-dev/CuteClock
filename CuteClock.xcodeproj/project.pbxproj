@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3F9F976C1FC9E96B00F06110 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9F976A1FC9E96B00F06110 /* RxCocoa.framework */; };
 		3F9F976D1FC9E96B00F06110 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9F976B1FC9E96B00F06110 /* RxSwift.framework */; };
+		3F9F977C1FCAAD3500F06110 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F977B1FCAAD3500F06110 /* AlertViewController.swift */; };
+		3F9F977F1FCAB0F500F06110 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F9F97811FCAB0F500F06110 /* InfoPlist.strings */; };
 		3FBCC72E1FC9DDDD008267AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBCC72D1FC9DDDD008267AB /* AppDelegate.swift */; };
 		3FBCC7301FC9DDDD008267AB /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBCC72F1FC9DDDD008267AB /* MainController.swift */; };
 		3FBCC7331FC9DDDD008267AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBCC7311FC9DDDD008267AB /* Main.storyboard */; };
@@ -16,6 +18,20 @@
 		3FBCC7381FC9DDDD008267AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBCC7361FC9DDDD008267AB /* LaunchScreen.storyboard */; };
 		3FBCC7431FC9DDDD008267AB /* CuteClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBCC7421FC9DDDD008267AB /* CuteClockTests.swift */; };
 		3FBCC74E1FC9DDDD008267AB /* CuteClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBCC74D1FC9DDDD008267AB /* CuteClockUITests.swift */; };
+		3FCF11DA1FCAB22800DFBB31 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FCF11DC1FCAB22800DFBB31 /* Localizable.strings */; };
+		3FCF11E51FCAB55800DFBB31 /* NewAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCF11E41FCAB55800DFBB31 /* NewAlertViewController.swift */; };
+		3FCF11EF1FCAE1B000DFBB31 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCF11EB1FCAE1B000DFBB31 /* SnapKit.framework */; };
+		3FCF11FE1FCAF46100DFBB31 /* RealmManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCF11F51FCAF46100DFBB31 /* RealmManager.framework */; };
+		3FCF12051FCAF46100DFBB31 /* ClockModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCF12041FCAF46100DFBB31 /* ClockModelTests.swift */; };
+		3FCF12071FCAF46100DFBB31 /* RealmManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FCF11F71FCAF46100DFBB31 /* RealmManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FCF120A1FCAF46100DFBB31 /* RealmManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCF11F51FCAF46100DFBB31 /* RealmManager.framework */; };
+		3FCF120C1FCAF46100DFBB31 /* RealmManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCF11F51FCAF46100DFBB31 /* RealmManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3FCF12141FCAFF6000DFBB31 /* _Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCF12131FCAFF6000DFBB31 /* _Alert.swift */; };
+		3FCF12151FCAFF8800DFBB31 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCF11E91FCAE1B000DFBB31 /* Realm.framework */; };
+		3FCF12161FCAFF8800DFBB31 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCF11E81FCAE1B000DFBB31 /* RealmSwift.framework */; };
+		3FCF12181FCAFF9D00DFBB31 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9F976B1FC9E96B00F06110 /* RxSwift.framework */; };
+		3FCF121C1FCB0D8300DFBB31 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCF121B1FCB0D8300DFBB31 /* RealmManager.swift */; };
+		3FCF121E1FCB137A00DFBB31 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCF121D1FCB137A00DFBB31 /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,13 +49,51 @@
 			remoteGlobalIDString = 3FBCC7291FC9DDDD008267AB;
 			remoteInfo = CuteClock;
 		};
+		3FCF11FF1FCAF46100DFBB31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FBCC7221FC9DDDD008267AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FCF11F41FCAF46100DFBB31;
+			remoteInfo = ClockModel;
+		};
+		3FCF12011FCAF46100DFBB31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FBCC7221FC9DDDD008267AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FBCC7291FC9DDDD008267AB;
+			remoteInfo = CuteClock;
+		};
+		3FCF12081FCAF46100DFBB31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FBCC7221FC9DDDD008267AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FCF11F41FCAF46100DFBB31;
+			remoteInfo = ClockModel;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3FCF120B1FCAF46100DFBB31 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3FCF120C1FCAF46100DFBB31 /* RealmManager.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3F9F976A1FC9E96B00F06110 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		3F9F976B1FC9E96B00F06110 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		3F9F97791FCAAB1000F06110 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		3F9F977A1FCAAB1000F06110 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		3F9F977B1FCAAD3500F06110 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		3F9F97801FCAB0F500F06110 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		3F9F97831FCAB11000F06110 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3FBCC72A1FC9DDDD008267AB /* CuteClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CuteClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBCC72D1FC9DDDD008267AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FBCC72F1FC9DDDD008267AB /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
@@ -53,6 +107,22 @@
 		3FBCC7491FC9DDDD008267AB /* CuteClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuteClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBCC74D1FC9DDDD008267AB /* CuteClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuteClockUITests.swift; sourceTree = "<group>"; };
 		3FBCC74F1FC9DDDD008267AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FCF11DB1FCAB22800DFBB31 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		3FCF11DD1FCAB22A00DFBB31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3FCF11E11FCAB24E00DFBB31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3FCF11E41FCAB55800DFBB31 /* NewAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAlertViewController.swift; sourceTree = "<group>"; };
+		3FCF11E81FCAE1B000DFBB31 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		3FCF11E91FCAE1B000DFBB31 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		3FCF11EB1FCAE1B000DFBB31 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		3FCF11F51FCAF46100DFBB31 /* RealmManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RealmManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FCF11F71FCAF46100DFBB31 /* RealmManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RealmManager.h; sourceTree = "<group>"; };
+		3FCF11F81FCAF46100DFBB31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FCF11FD1FCAF46100DFBB31 /* ClockModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClockModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FCF12041FCAF46100DFBB31 /* ClockModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockModelTests.swift; sourceTree = "<group>"; };
+		3FCF12061FCAF46100DFBB31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FCF12131FCAFF6000DFBB31 /* _Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _Alert.swift; sourceTree = "<group>"; };
+		3FCF121B1FCB0D8300DFBB31 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		3FCF121D1FCB137A00DFBB31 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +130,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FCF120A1FCAF46100DFBB31 /* RealmManager.framework in Frameworks */,
 				3F9F976C1FC9E96B00F06110 /* RxCocoa.framework in Frameworks */,
 				3F9F976D1FC9E96B00F06110 /* RxSwift.framework in Frameworks */,
+				3FCF11EF1FCAE1B000DFBB31 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,12 +151,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3FCF11F11FCAF46100DFBB31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FCF12181FCAFF9D00DFBB31 /* RxSwift.framework in Frameworks */,
+				3FCF12161FCAFF8800DFBB31 /* RealmSwift.framework in Frameworks */,
+				3FCF12151FCAFF8800DFBB31 /* Realm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FCF11FA1FCAF46100DFBB31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FCF11FE1FCAF46100DFBB31 /* RealmManager.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		3F9F97691FC9E96B00F06110 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3FCF11E91FCAE1B000DFBB31 /* Realm.framework */,
+				3FCF11E81FCAE1B000DFBB31 /* RealmSwift.framework */,
+				3FCF11EB1FCAE1B000DFBB31 /* SnapKit.framework */,
 				3F9F976A1FC9E96B00F06110 /* RxCocoa.framework */,
 				3F9F976B1FC9E96B00F06110 /* RxSwift.framework */,
 			);
@@ -95,6 +188,8 @@
 			isa = PBXGroup;
 			children = (
 				3FBCC72F1FC9DDDD008267AB /* MainController.swift */,
+				3F9F977B1FCAAD3500F06110 /* AlertViewController.swift */,
+				3FCF11E41FCAB55800DFBB31 /* NewAlertViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -128,6 +223,8 @@
 				3FBCC7341FC9DDDD008267AB /* Assets.xcassets */,
 				3FBCC7361FC9DDDD008267AB /* LaunchScreen.storyboard */,
 				3FBCC7391FC9DDDD008267AB /* Info.plist */,
+				3F9F97811FCAB0F500F06110 /* InfoPlist.strings */,
+				3FCF11DC1FCAB22800DFBB31 /* Localizable.strings */,
 			);
 			path = "Support files";
 			sourceTree = "<group>";
@@ -138,10 +235,14 @@
 				3FBCC72C1FC9DDDD008267AB /* CuteClock */,
 				3FBCC7411FC9DDDD008267AB /* CuteClockTests */,
 				3FBCC74C1FC9DDDD008267AB /* CuteClockUITests */,
+				3FCF11F61FCAF46100DFBB31 /* RealmManager */,
+				3FCF12031FCAF46100DFBB31 /* ClockModelTests */,
 				3FBCC72B1FC9DDDD008267AB /* Products */,
 				3F9F97691FC9E96B00F06110 /* Frameworks */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		3FBCC72B1FC9DDDD008267AB /* Products */ = {
 			isa = PBXGroup;
@@ -149,6 +250,8 @@
 				3FBCC72A1FC9DDDD008267AB /* CuteClock.app */,
 				3FBCC73E1FC9DDDD008267AB /* CuteClockTests.xctest */,
 				3FBCC7491FC9DDDD008267AB /* CuteClockUITests.xctest */,
+				3FCF11F51FCAF46100DFBB31 /* RealmManager.framework */,
+				3FCF11FD1FCAF46100DFBB31 /* ClockModelTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -183,7 +286,39 @@
 			path = CuteClockUITests;
 			sourceTree = "<group>";
 		};
+		3FCF11F61FCAF46100DFBB31 /* RealmManager */ = {
+			isa = PBXGroup;
+			children = (
+				3FCF11F71FCAF46100DFBB31 /* RealmManager.h */,
+				3FCF121B1FCB0D8300DFBB31 /* RealmManager.swift */,
+				3FCF12131FCAFF6000DFBB31 /* _Alert.swift */,
+				3FCF121D1FCB137A00DFBB31 /* Alert.swift */,
+				3FCF11F81FCAF46100DFBB31 /* Info.plist */,
+			);
+			path = RealmManager;
+			sourceTree = "<group>";
+		};
+		3FCF12031FCAF46100DFBB31 /* ClockModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FCF12041FCAF46100DFBB31 /* ClockModelTests.swift */,
+				3FCF12061FCAF46100DFBB31 /* Info.plist */,
+			);
+			path = ClockModelTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3FCF11F21FCAF46100DFBB31 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FCF12071FCAF46100DFBB31 /* RealmManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		3FBCC7291FC9DDDD008267AB /* CuteClock */ = {
@@ -194,10 +329,12 @@
 				3FBCC7271FC9DDDD008267AB /* Frameworks */,
 				3FBCC7281FC9DDDD008267AB /* Resources */,
 				3F9F976E1FC9E98400F06110 /* ShellScript */,
+				3FCF120B1FCAF46100DFBB31 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3FCF12091FCAF46100DFBB31 /* PBXTargetDependency */,
 			);
 			name = CuteClock;
 			productName = CuteClock;
@@ -240,6 +377,43 @@
 			productReference = 3FBCC7491FC9DDDD008267AB /* CuteClockUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		3FCF11F41FCAF46100DFBB31 /* RealmManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FCF120D1FCAF46100DFBB31 /* Build configuration list for PBXNativeTarget "RealmManager" */;
+			buildPhases = (
+				3FCF11F01FCAF46100DFBB31 /* Sources */,
+				3FCF11F11FCAF46100DFBB31 /* Frameworks */,
+				3FCF11F21FCAF46100DFBB31 /* Headers */,
+				3FCF11F31FCAF46100DFBB31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RealmManager;
+			productName = ClockModel;
+			productReference = 3FCF11F51FCAF46100DFBB31 /* RealmManager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3FCF11FC1FCAF46100DFBB31 /* ClockModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FCF12101FCAF46100DFBB31 /* Build configuration list for PBXNativeTarget "ClockModelTests" */;
+			buildPhases = (
+				3FCF11F91FCAF46100DFBB31 /* Sources */,
+				3FCF11FA1FCAF46100DFBB31 /* Frameworks */,
+				3FCF11FB1FCAF46100DFBB31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FCF12001FCAF46100DFBB31 /* PBXTargetDependency */,
+				3FCF12021FCAF46100DFBB31 /* PBXTargetDependency */,
+			);
+			name = ClockModelTests;
+			productName = ClockModelTests;
+			productReference = 3FCF11FD1FCAF46100DFBB31 /* ClockModelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -264,6 +438,16 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 3FBCC7291FC9DDDD008267AB;
 					};
+					3FCF11F41FCAF46100DFBB31 = {
+						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+					};
+					3FCF11FC1FCAF46100DFBB31 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3FBCC7291FC9DDDD008267AB;
+					};
 				};
 			};
 			buildConfigurationList = 3FBCC7251FC9DDDD008267AB /* Build configuration list for PBXProject "CuteClock" */;
@@ -282,6 +466,8 @@
 				3FBCC7291FC9DDDD008267AB /* CuteClock */,
 				3FBCC73D1FC9DDDD008267AB /* CuteClockTests */,
 				3FBCC7481FC9DDDD008267AB /* CuteClockUITests */,
+				3FCF11F41FCAF46100DFBB31 /* RealmManager */,
+				3FCF11FC1FCAF46100DFBB31 /* ClockModelTests */,
 			);
 		};
 /* End PBXProject section */
@@ -291,7 +477,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FCF11DA1FCAB22800DFBB31 /* Localizable.strings in Resources */,
 				3FBCC7381FC9DDDD008267AB /* LaunchScreen.storyboard in Resources */,
+				3F9F977F1FCAB0F500F06110 /* InfoPlist.strings in Resources */,
 				3FBCC7351FC9DDDD008267AB /* Assets.xcassets in Resources */,
 				3FBCC7331FC9DDDD008267AB /* Main.storyboard in Resources */,
 			);
@@ -311,6 +499,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3FCF11F31FCAF46100DFBB31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FCF11FB1FCAF46100DFBB31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -323,6 +525,8 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
 			);
 			outputPaths = (
 			);
@@ -337,7 +541,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FCF11E51FCAB55800DFBB31 /* NewAlertViewController.swift in Sources */,
 				3FBCC7301FC9DDDD008267AB /* MainController.swift in Sources */,
+				3F9F977C1FCAAD3500F06110 /* AlertViewController.swift in Sources */,
 				3FBCC72E1FC9DDDD008267AB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +564,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3FCF11F01FCAF46100DFBB31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FCF121E1FCB137A00DFBB31 /* Alert.swift in Sources */,
+				3FCF121C1FCB0D8300DFBB31 /* RealmManager.swift in Sources */,
+				3FCF12141FCAFF6000DFBB31 /* _Alert.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FCF11F91FCAF46100DFBB31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FCF12051FCAF46100DFBB31 /* ClockModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -371,9 +595,33 @@
 			target = 3FBCC7291FC9DDDD008267AB /* CuteClock */;
 			targetProxy = 3FBCC74A1FC9DDDD008267AB /* PBXContainerItemProxy */;
 		};
+		3FCF12001FCAF46100DFBB31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FCF11F41FCAF46100DFBB31 /* RealmManager */;
+			targetProxy = 3FCF11FF1FCAF46100DFBB31 /* PBXContainerItemProxy */;
+		};
+		3FCF12021FCAF46100DFBB31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FBCC7291FC9DDDD008267AB /* CuteClock */;
+			targetProxy = 3FCF12011FCAF46100DFBB31 /* PBXContainerItemProxy */;
+		};
+		3FCF12091FCAF46100DFBB31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FCF11F41FCAF46100DFBB31 /* RealmManager */;
+			targetProxy = 3FCF12081FCAF46100DFBB31 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		3F9F97811FCAB0F500F06110 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F9F97801FCAB0F500F06110 /* zh-Hans */,
+				3F9F97831FCAB11000F06110 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		3FBCC7311FC9DDDD008267AB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -388,8 +636,18 @@
 			children = (
 				3FBCC7371FC9DDDD008267AB /* Base */,
 				3F9F977A1FCAAB1000F06110 /* zh-Hans */,
+				3FCF11E11FCAB24E00DFBB31 /* en */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3FCF11DC1FCAB22800DFBB31 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FCF11DB1FCAB22800DFBB31 /* zh-Hans */,
+				3FCF11DD1FCAB22A00DFBB31 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -507,6 +765,7 @@
 		3FBCC7531FC9DDDD008267AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -529,6 +788,7 @@
 		3FBCC7541FC9DDDD008267AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -614,6 +874,99 @@
 			};
 			name = Release;
 		};
+		3FCF120E1FCAF46100DFBB31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7Z9QGDZHJM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = RealmManager/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vsccw.ClockModel;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3FCF120F1FCAF46100DFBB31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7Z9QGDZHJM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = RealmManager/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vsccw.ClockModel;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3FCF12111FCAF46100DFBB31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7Z9QGDZHJM;
+				INFOPLIST_FILE = ClockModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vsccw.ClockModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CuteClock.app/CuteClock";
+			};
+			name = Debug;
+		};
+		3FCF12121FCAF46100DFBB31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7Z9QGDZHJM;
+				INFOPLIST_FILE = ClockModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vsccw.ClockModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CuteClock.app/CuteClock";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -649,6 +1002,24 @@
 			buildConfigurations = (
 				3FBCC7591FC9DDDD008267AB /* Debug */,
 				3FBCC75A1FC9DDDD008267AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FCF120D1FCAF46100DFBB31 /* Build configuration list for PBXNativeTarget "RealmManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FCF120E1FCAF46100DFBB31 /* Debug */,
+				3FCF120F1FCAF46100DFBB31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FCF12101FCAF46100DFBB31 /* Build configuration list for PBXNativeTarget "ClockModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FCF12111FCAF46100DFBB31 /* Debug */,
+				3FCF12121FCAF46100DFBB31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
