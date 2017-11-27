@@ -57,14 +57,14 @@ public class RealmManager: NSObject {
 
 extension RealmManager {
   
-  public func allAlert() -> Observable<[Alert]> {
+  public func allAlert() -> [Alert]? {
     guard let _alerts = realm?.objects(_Alert.self) else {
-      return Observable.empty()
+      return nil
     }
     let alerts = Array(_alerts).map {
       $0.toAlert
     }
-    return Observable.just(alerts)
+    return alerts
   }
   
   public func addAlert(_ alert: Alert) {

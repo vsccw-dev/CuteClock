@@ -24,8 +24,9 @@ public struct Alert {
   }
 
   var to_Alert: _Alert {
+    let createAt = Int(Date().timeIntervalSince1970 * 1000)
     return _Alert(value: ["_alert_time_interval": clockTimeInterval,
                           "_clock_date": clockDate ?? Date(),
-                          "_id": "\(clockTimeInterval)"])
+                          "_create_at": createAt])
   }
 }
