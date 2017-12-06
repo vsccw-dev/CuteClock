@@ -16,7 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    try? RealmManager.current.setup(appName: "CuteClock", 1)
+    
+    do {
+      try RealmManager.current.setup(appName: "CuteClock", 1)
+    } catch let error {
+      debugPrint(error)
+    }
+    
     return true
   }
   

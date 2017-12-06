@@ -30,13 +30,12 @@ public class RealmManager: NSObject {
     guard var path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first else {
       throw NSError(domain: "Error- document directory not found", code: 0, userInfo: nil)
     }
-    path.append("/Realm/\(appName)_alert.realm")
+    path.append("/Realm")
     let fileExisted = FileManager.default.fileExists(atPath: path)
     if !fileExisted {
-      FileManager.default.createFile(atPath: path, contents: nil, attributes: nil)
+      try FileManager.default.createDirectory(atPath: path, withIntermediateDirectories: true, attributes: nil)
     }
-    
-    let fileURL = URL(fileURLWithPath: path)
+    let fileURL = URL(fileURLWithPath: "/" + path + "\(appName)_alert.realm")
     
     var configuration: Realm.Configuration {
       let config = Realm.Configuration(fileURL: fileURL,
