@@ -4,6 +4,9 @@
 
 osx_image: xcode9
 language: objective-c
+xcode_project: CuteClock.xcodeproj
+xcode_scheme: CuteClock
+
 # cache: cocoapods
 # podfile: Example/Podfile
 # before_install:
@@ -23,3 +26,4 @@ before_install:
 script:
 - xcodebuild -project CuteClock.xcodeproj -target CuteClock -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 # - pod lib lint
+
