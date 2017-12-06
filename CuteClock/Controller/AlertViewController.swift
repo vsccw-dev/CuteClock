@@ -15,19 +15,67 @@ class AlertViewController: UIViewController {
   @IBOutlet weak var tableView: UITableView!
   @IBOutlet weak var addAlertItem: UIBarButtonItem!
   
+  var allAlert: [Alert]? {
+    didSet {
+      tableView.reloadData()
+    }
+  }
+  
   let disposeBag = DisposeBag()
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    RealmManager.current.allAlert()
-      .subscribe(onNext: { (alerts) in
-        debugPrint(alerts)
-      })
-      .disposed(by: disposeBag)
+    
+    if #available(iOS 11.0, *) {
+      tableView.contentInsetAdjustmentBehavior = .never
+    } else {
+      automaticallyAdjustsScrollViewInsets = false
+    }
+    
+    tableView.contentInset.top = 70
   }
   
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
+  override func viewWillAppear(_ animated: Bool) {
+//    navigationController?.setNavigationBarHidden(true, animated: animated)
+    super.viewWillAppear(animated)
+    allAlert = RealmManager.current.allAlert()
   }
   
+  override func viewWillDisappear(_ animated: Bool) {
+//    navigationController?.setNavigationBarHidden(false, animated: animated)
+    super.viewWillDisappear(animated)
+  }
+}
+
+
+extension AlertViewController: UITableViewDataSource {
+  func numberOfSections(in tableView: UITableView) -> Int {
+    return 1
+  }
+  
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    let count = allAlert?.count ?? 0
+    return count
+  }
+  
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: "alertCell")
+//    let currentAlert = allAlert?[indexPath.row]
+//    cell?.textLabel?.text = "\(currentAlert?.clockTimeInterval ?? 0)"
+    return cell!
+  }
+}
+
+extension AlertViewController: UITableViewDelegate {
+  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    return 80.0
+  }
+  
+  func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+    return CGFloat.leastNormalMagnitude
+  }
+  
+  func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    return CGFloat.leastNormalMagnitude
+  }
 }

@@ -11,7 +11,7 @@ import Realm
 import RealmSwift
 import RxSwift
 
-public class _Alert: Object {
+class _Alert: Object {
   
   var alertTimeInterval: TimeInterval { return _alert_time_interval }
   var clockDate: Date? { return _clock_date }
