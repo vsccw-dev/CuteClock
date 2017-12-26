@@ -33,6 +33,10 @@ class AlertViewController: UIViewController {
     }
     
     tableView.contentInset.top = 70
+    
+    Notification.shared.requestPermission { (granted) in
+      debugPrint(granted)
+    }
   }
   
   override func viewWillAppear(_ animated: Bool) {
